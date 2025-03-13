@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 70px;
+    font-family: 'Arial', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+}
+
+.book-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.book-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.book-header h1 {
+    font-size: 2.5rem;
+    color: #34495e;
+}
+
+.book-header p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+.search-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.search-filters input,
+.search-filters select {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.book-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-7px);
+}
+
+.book-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.book-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.book-card p {
+    margin: 0.25rem 0;
+    color: #555;
+}
+
+.book-card .price {
+    font-weight: bold;
+    color: #2980b9;
+}
+
+.book-card .condition {
+    font-style: italic;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    background: #2980b9;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #1f669e;
+}
+
+@media (max-width: 1024px) {
+    .book-header h1 {
+        font-size: 2rem;
+    }
+    .book-header p {
+        font-size: 1rem;
+    }
+
+    .book-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .search-filters input,
+    .search-filters select {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .book-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .book-card p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 50px;
+    }
+
+    .book-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .book-header p {
+        font-size: 1rem;
+    }
+
+    .book-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .search-filters {
+        flex-direction: column;
+    }
+
+    .search-filters input,
+    .search-filters select {
+        width: 100%;
+    }
+
+    .book-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .book-card p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-top: 40px;
+    }
+
+    .book-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .book-header p {
+        font-size: 0.9rem;
+    }
+
+    .search-filters input,
+    .search-filters select {
+        font-size: 0.8rem;
+    }
+
+    .book-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .book-card p {
+        font-size: 0.85rem;
+    }
+
+    .btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Default Light Theme */
+:root {
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --navbar-color: #2c3e50;
+    --navbar-text-color: #ffffff;
+    --card-background: #f9f9f9;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --navbar-color: #1a1a1a;
+    --navbar-text-color: #e0e0e0;
+    --card-background: #1e1e1e;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Apply Theme Colors */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    background-color: var(--navbar-color);
+    color: var(--navbar-text-color);
+}
+
+.nav-links a {
+    color: var(--navbar-text-color);
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--navbar-text-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    color: #3498db;
+}
