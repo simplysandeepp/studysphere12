@@ -211,8 +211,28 @@ body {
         font-size: 1.5rem; /* Slightly smaller logo for smaller screens */
     }
 
+    /* Ensure profile dropdown is visible in mobile view */
     .profile-dropdown {
-        display: none; /* Hide profile dropdown in mobile view */
+        display: flex; 
+        align-items: center;
+    }
+
+    .profile-dropdown .dropdown-content {
+        position: static; /* Ensure dropdown stays visible */
+        background: none;
+        box-shadow: none;
+        display: block;
+    }
+
+    .profile-dropdown img {
+        width: 30px; /* Adjust size */
+        height: 30px;
+    }
+
+    /* Change font color to white */
+    .dropdown-content a {
+        color: white !important; /* White text */
+        text-decoration: none;
     }
 
     .theme-toggle {
@@ -220,8 +240,8 @@ body {
     }
 }
 
+
 /* Optional Transitions for Menu */
 .nav-links {
     transition: all 0.3s ease;
 }
-
