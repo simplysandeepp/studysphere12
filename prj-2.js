@@ -31,7 +31,7 @@ const studyGroups = [
         course: "C++", 
         members: 15, 
         description: "A group for C++ enthusiasts to discuss DSA and problem-solving.",
-        admin: "John Doe",
+        admin: "Sandeepp",
         schedule: "Every Saturday at 5 PM"
     },
     { 
@@ -39,7 +39,7 @@ const studyGroups = [
         course: "Mathematics", 
         members: 23, 
         description: "Advanced mathematics discussions including calculus, algebra, and statistics.",
-        admin: "Alice Smith",
+        admin: "Vaibhav",
         schedule: "Wednesdays at 3 PM"
     },
     { 
@@ -47,7 +47,7 @@ const studyGroups = [
         course: "Physics", 
         members: 18, 
         description: "Exploring Newtonian mechanics, relativity, and quantum physics.",
-        admin: "Dr. Brian",
+        admin: "Ansh",
         schedule: "Mondays at 6 PM"
     }
 ];
