@@ -12,6 +12,9 @@ body {
     transition: background-color 0.3s ease; /* Smooth background transition */
 }
 
+a {
+    text-decoration: none;
+}
 /* cls-1 Section */
 .cls-1 {
     background: linear-gradient(135deg, #3498db, #8e44ad);
