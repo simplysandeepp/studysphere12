@@ -362,3 +362,42 @@ a {
 .theme-toggle:hover {
     color: #3498db;
 }
+
+
+        /* Contact Section */
+        .contact {
+            padding: 40px 10px;
+            background: #34495e;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .contact p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .contact a {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: #333333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 16px;
+        }
+
+        footer a {
+            color: #ffffff;
+            font-weight: bold;
+        }
